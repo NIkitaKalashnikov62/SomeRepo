@@ -29,6 +29,6 @@ jobs:
         pip install --user -U pip 
         pip install wheel
         echo ${{ github.event.repository.full_name }}
-        echo ${{toJSON(github.event)}}
+        echo ${{github.event}}
         echo ${{github.actor}}
 #        pip install -e git+https://github.com/${{ github.event.repository.full_name }}.git@${{ github.head_ref }}#egg=batchflow
